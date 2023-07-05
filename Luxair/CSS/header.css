@@ -1,0 +1,152 @@
+/*************************HEADER START**********************/
+
+header {
+    width: 100%;
+    height: 10rem;
+    background-color: black;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.header-left {
+    display: flex;
+}
+
+
+
+.logo {
+    width: 10rem;
+    background-image: url(/Images/Untitled\ \(100\ ×\ 94px\)\ \(2\).png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.x {
+    display: flex;
+    width: 20rem;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.8rem;
+    cursor: pointer;
+}
+
+
+
+.x:hover {
+    font-size: 3.2rem;
+    transition: all 0.15s ease-in;
+    background-color: rgb(48, 46, 44);
+}
+
+
+
+.header-right {
+    display: flex;
+    width: 25rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+.globe {
+    font-size: 2.4rem;
+}
+
+
+
+.dark-light {
+    display: flex;
+    width: 6rem;
+    height: 3rem;
+    justify-content: space-around;
+    border: 0.1rem white solid;
+    border-radius: 2rem;
+    cursor: pointer;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+
+
+.person {
+    font-size: 4.2rem;
+    cursor: pointer;
+}
+
+/*************************HEADER END**********************/
+
+@media (width <=767px) {
+
+    html {
+        font-size: 2px;
+    }
+
+    header {
+        height: 20rem;
+    }
+
+    .logo {
+        width: 20rem;
+        background-image: url(/Images/Untitled\ \(100\ ×\ 94px\)\ \(2\).png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .x {
+        width: 27rem;
+        height: 20rem;
+        font-size: 4.8rem;
+    }
+
+
+
+    .x:hover {
+        font-size: 5.2rem;
+    }
+
+
+
+    .header-right {
+        display: flex;
+        width: 50rem;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+
+
+    .globe {
+        font-size: 6rem;
+    }
+
+    .dark-light {
+        display: flex;
+        width: 12rem;
+        height: 6rem;
+        justify-content: space-around;
+        border: 0.1rem white solid;
+        border-radius: 10rem;
+        align-items: center;
+        font-size: 4rem;
+    }
+
+    .person {
+        font-size: 9rem;
+    }
+
+    .header-left {
+        display: flex;
+        justify-content: space-between;
+        width: 30vh;
+    }
+}

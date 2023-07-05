@@ -1,0 +1,201 @@
+/*************************MAIN START**********************/
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opening-photo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/Images/Screenshot\ 2023-03-01\ 224512.png);
+    height: 135rem;
+    width: 100%;
+    display: flex;
+    background-position: center;
+}
+
+
+
+.most h1 {
+    display: block;
+    color: white;
+    font-size: 3.4rem;
+    text-align: center;
+}
+
+
+
+.most {
+    width: 120rem;
+    height: 10rem;
+    background-color: black;
+    border-bottom-left-radius: 33px;
+    border-bottom-right-radius: 33px;
+}
+
+
+
+.popular-flights {
+    width: 120rem;
+    height: 40rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    margin-top: 6rem;
+}
+
+
+
+.flags {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    border-radius: 3.3rem;
+    justify-content: space-around;
+}
+
+/*************************MAIN END**********************/
+
+/*************************FOOTER START**********************/
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+footer i {
+    font-size: 6rem;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+
+
+footer p,
+footer h1 {
+    font-size: 3.6rem;
+}
+
+.container-footer-icons {
+    width: 90%;
+    display: flex;
+}
+
+.container-icon-inner {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-footer-contact {
+    width: 90%;
+    height: 30rem;
+    border-bottom: 0.6rem white double;
+}
+
+/*************************FOOTER END**********************/
+
+/*************************RESPONSIVE START**********************/
+
+/*************************LAPTOP*********************/
+
+@media (1024px <=width <=1920px) {
+    html {
+        font-size: 7px;
+    }
+}
+
+/*************************TABLET*********************/
+
+@media (768px <=width <=1023px) {
+    html {
+        font-size: 5px;
+    }
+}
+
+/*************************PHONE*********************/
+
+@media (width <=767px) {
+
+    .opening-photo {
+        height: 50vh;
+    }
+
+    .main {
+        height: 25vh;
+    }
+
+    .most h1 {
+        font-size: 7rem;
+
+    }
+
+    .most {
+        width: 140rem;
+        height: 20rem;
+        background-color: black;
+    }
+
+    .popular-flights {
+        width: 140rem;
+        height: 60rem;
+        margin-top: 25rem;
+    }
+
+    .flags {
+        width: 100%;
+        height: 30rem;
+        display: flex;
+        border-radius: 3.3rem;
+        justify-content: space-around;
+    }
+
+    footer {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 25vh;
+    }
+
+    footer i {
+        font-size: 10rem;
+        cursor: pointer;
+        margin-left: 2rem;
+    }
+
+    footer p,
+    footer h1 {
+        font-size: 8rem;
+    }
+
+    .container-footer-icons {
+        width: 90%;
+        display: flex;
+        margin-bottom: 15rem;
+    }
+
+    .container-icon-inner {
+        width: 25%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container-footer-contact {
+        width: 90%;
+        height: 30rem;
+        border-bottom: 0.6rem white double;
+    }
+}
+
+/*************************RESPONSIVE END**********************/
